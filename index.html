@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4;
+            background-color: #edc4c4;
             text-align: center;
             margin: 20px;
         }
@@ -16,7 +16,7 @@
         #search-container {
             max-width: 400px;
             margin: 0 auto;
-            background-color: #ff4f;
+            background-color: #e0fbff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@
             width: 100%;
             padding: 10px;
             box-sizing: border-box;
-            background-color: #4caf50;
+            background-color: #bee8bf;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -82,7 +82,7 @@
                     resultsElement.innerHTML = '';
                     data.forEach(country => {
                         var countryDiv = document.createElement('div');
-                        countryDiv.innerHTML = `<img class="flag" src="https://flagcdn.com/30x20/${country.cca2.toLowerCase()}.png" alt="${country.name.common}">${country.name.common}`;
+                        countryDiv.innerHTML = `<img class="flag" src="https://flagcdn.com/${country.cca2.toLowerCase()}.png" alt="${country.name.common}">${country.name.common}`;
                         resultsElement.appendChild(countryDiv);
                     });
                 }
